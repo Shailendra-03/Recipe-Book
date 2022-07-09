@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.codingsp.recipebook.view.fragment.mainActivityFragment.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigationExplore"
+            app:destination="@id/navigation_explore"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"/>
+    </fragment>
+
+    <fragment android:id="@+id/navigation_explore"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_explore"
+        android:name="com.codingsp.recipebook.view.fragment.mainActivityFragment.ExploreFragment"/>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.codingsp.recipebook.view.fragment.mainActivityFragment.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigationAddPost"
+        android:label="Add Post"
+        android:name="com.codingsp.recipebook.view.fragment.mainActivityFragment.AddPostFragment"
+        tools:layout="@layout/fragment_add_post">
+        <action
+            android:id="@+id/action_navigationAddPost_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigationProfile"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"
+        android:name="com.codingsp.recipebook.view.fragment.mainActivityFragment.ProfileFragment"/>
+
+
+</navigation>

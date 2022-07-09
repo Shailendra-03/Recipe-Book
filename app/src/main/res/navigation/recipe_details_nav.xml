@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recipe_details_nav"
+    app:startDestination="@id/navigation_recipeDetailsFragment">
+
+    <fragment
+        android:id="@+id/navigation_likedByUsersFragment"
+        android:name="com.codingsp.recipebook.view.fragment.recipeDetailsFragment.LikedByUsersFragment"
+        android:label="fragment_liked_by_users"
+        tools:layout="@layout/fragment_liked_by_users" />
+    <fragment
+        android:id="@+id/navigation_recipeDetailsFragment"
+        android:name="com.codingsp.recipebook.view.fragment.recipeDetailsFragment.RecipeDetailsFragment"
+        android:label="fragment_recipe_details"
+        tools:layout="@layout/fragment_recipe_details" >
+        <action
+            android:id="@+id/action_recipeDetailsFragment_to_likedByUsersFragment"
+            app:destination="@id/navigation_likedByUsersFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"/>
+    </fragment>
+</navigation>
