@@ -1,5 +1,20 @@
 # Recipe-Book
 
+Recipe Book is a social media app specially desinged for chefs and foodies.It also has good Ui design which makes it easy for you to use the app.
+It has all functionalities of a social media with some special functionalities related to recipes. Some features of the app is given below:
+<ul>
+  <li>Sign In using Email-Password or Using Gmail.</li>
+  <li>Post your Recipes.</li>
+  <li>Like each other recipes.</li>
+  <li>Post Stories.</li>
+  <li>Follow your favorite chefs.</li>
+  <li>View Recipes of other users of the app.</li>
+  <li>Write your reviews about recipes.</li>
+  <li>Follow along with recipe instruction and cook your favorite food on the go.</li>
+</ul>
+
+Some Screenshots from the app are shown below :
+
 <table>
   <tr>
     <td>Login Screen</td>
